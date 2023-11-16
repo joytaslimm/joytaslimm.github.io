@@ -14,7 +14,6 @@
     color: #dddd00;
     text-decoration: none;
     font-weight: 700;
-    margin-left: -70px;
     font-family: verdana;
 }
 
@@ -44,11 +43,7 @@ header{
 	padding: 30px 18%;
 	transition: .3s;
 }
-.logo img{
-	max-width: 100%;
-	width: 130px;
-	height: auto;
-}
+
 .navlist{
 	display: flex;
 }
@@ -118,7 +113,7 @@ section{
 }
 .home-text h1{
 	margin: 10px 0px 25px;
-	font-size: var(--big-font);
+	font-size: 50px;
 	line-height: 1;
 	font-weight: 500;
 }
