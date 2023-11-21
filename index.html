@@ -25,6 +25,11 @@
 			<li><a href="#about">Tentang Saya</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Kontak</a></li>
+			<!-- Kita buat id toggle -->
+			<div id="toggle">
+				<!-- kita buat class indicator -->
+				<i class="indicator"><i class='bx bxs-adjust'></i></i>
+			</div>
 		</ul>
 	</header>
 
@@ -32,15 +37,9 @@
 	<section class="home" id="home">
 		<div class="home-text">
 			<h3>Perkenalkan saya,</h3>
-<<<<<<< HEAD
-			<h1>Tryan oktajaya sakti</h1>
-			<h5>Saya junior<span> Web progaming</span></h5>
-			<a href="https://drive.google.com/file/d/1X2g8hsMJ0wVsxFDHCWYjPihVpp5JB2Lf/view?usp=sharing" class="btn">Download CV</a>
-=======
 			<h1>Tryan Oktajaya Sakti</h1>
 			<h5>Saya junior<span> Web progaming.</span></h5>
 			<a href="https://drive.google.com/file/d/1w-oyEp-b43S0A64G_5ZbenQe_CFQaEIH/view?usp=sharing" class="btn">Download CV</a>
->>>>>>> 1d0be2e1e37513f9b660da3e0b9ae02e520240b6
 		</div>
 
 		<div class="home-img">
@@ -56,13 +55,8 @@
 
 		<div class="about-text">
 			<h3>Saya junior</h3>
-<<<<<<< HEAD
-			<h2>Web progaming</h2>
-			<p>Perkenalkan saya, Tryan oktajaya sakti saya seorang junior web progaming saya pernah sekolah di SMKN 1 Kota Bengkulu.
-=======
 			<h2>Web progamming</h2>
 			<p>Perkenalkan saya, Tryan oktajaya sakti saya seorang junior web progamming.
->>>>>>> 1d0be2e1e37513f9b660da3e0b9ae02e520240b6
 			Saya memiliki latar belakang pendidikan di bidang pengembangan website.Saya Juga memiliki kemampuan dalam berbagai jenis bahasa pemrograman seperti HTML, CSS, PHP, dan juga saya bisa mengunakan PHOTOSHOP. Saya juga dapat bekerja secara tim maupun mandiri, serta beradaptasi dengan lingkungan kerja yang dinamis.</p>
 			<span>
 				<h1>Skill <br><br></h1>
@@ -78,7 +72,7 @@
 		<div class="heading">
 			<h3>Portfolio</h3>
 			<h2>Pengalaman Saya</h2>
-			<p>Pengalaman saya, saya pernah membuat beberapa website saat masi disekolah</p>
+			<p>Pengalaman saya, saya pernah membuat beberapa website saat masi disekolah.</p>
 		</div>
 
 		<div class="portfolio-content">
@@ -132,6 +126,40 @@
 
 	<!--------Link to js---->
 	<script type="text/javascript" src="js/script.js"></script>
-	
+
+	<!--Tombol kembali ke atas-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-chevrons-up'></i></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!--Tombol Light - terang-->
+<script>
+
+	// kita panggil element body dan toggle 
+	const body = document.querySelector('body');
+	const toggle = document.getElementById("toggle");
+
+	// ketika toggle kita klik maka dia akan menambahkan class yang bernama active
+	// yang mana active itu akan kita gunakan di dalam css 
+	toggle.onclick = function() {
+		toggle.classList.toggle('active');
+		body.classList.toggle('active');
+	}
+</script>
+
 </body>
 </html>
